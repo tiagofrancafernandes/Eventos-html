@@ -1,0 +1,12 @@
+.visible {
+    visibility: visible;
+  }
+
+  .not-visible {
+    visibility: hidden;
+
+  }
+
+  .secret {
+    width: fit-content;
+  }
