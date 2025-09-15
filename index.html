@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="color: black;">
     <h1> Change BG color</h1>
     <button onclick="setBgColor('red')">Red</button>
     <button onclick="setBgColor('blue')">Blue</button>
     <button onclick="setBgColor('green')">Green</button>
     <button onclick="setBgColor('yellow')">Yellow</button>
-    <button onclick="setBgColor('white')">Reset</button>
+    <button onclick="setBgColor('')">Reset</button>
 
     <p class="not-visible">The first paragraph is NOT visible.</p>
 
-    <button class="secret" onclick="changeVisibility()">Mostrar</button>
+    <button class="secret" onclick="changeVisibility(this)">Mostrar</button>
 
     <script src="script.js">
     </script>
