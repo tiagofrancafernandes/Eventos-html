@@ -1,0 +1,6 @@
+*.md
+node_modeules
+no-commit
+.vite
+.dist
+.build

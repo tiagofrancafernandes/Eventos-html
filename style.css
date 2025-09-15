@@ -1,12 +1,11 @@
 .visible {
     visibility: visible;
-  }
+}
 
-  .not-visible {
+.not-visible {
     visibility: hidden;
+}
 
-  }
-
-  .secret {
+.secret {
     width: fit-content;
-  }
+}

@@ -9,15 +9,14 @@ function changeVisibility(btn) {
     if (toShow) {
         p.classList.remove('not-visible');
         p.classList.add('visible');
-        btn.innerHTML =  'Esconder';
-        return
+        btn.innerHTML = 'Esconder';
+        return;
     }
 
     p.classList.add('not-visible');
     p.classList.remove('visible');
-    btn.innerHTML =  'Mostrar';
+    btn.innerHTML = 'Mostrar';
 }
-
 
 function setBgColor(color) {
     document.body.style.backgroundColor = color;

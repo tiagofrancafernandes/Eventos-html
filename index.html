@@ -1,28 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Change BG Color with JS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change BG Color with JS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body style="color: black">
+        <h1>Change BG color</h1>
+        <button onclick="setBgColor('red')">Red</button>
+        <button onclick="setBgColor('blue')">Blue</button>
+        <button onclick="setBgColor('green')">Green</button>
+        <button onclick="setBgColor('yellow')">Yellow</button>
+        <button onclick="setBgColor('')">Reset</button>
 
-<body style="color: black;">
-    <h1> Change BG color</h1>
-    <button onclick="setBgColor('red')">Red</button>
-    <button onclick="setBgColor('blue')">Blue</button>
-    <button onclick="setBgColor('green')">Green</button>
-    <button onclick="setBgColor('yellow')">Yellow</button>
-    <button onclick="setBgColor('')">Reset</button>
+        <p class="not-visible">The first paragraph is NOT visible.</p>
 
-    <p class="not-visible">The first paragraph is NOT visible.</p>
+        <button class="secret" onclick="changeVisibility(this)">Mostrar</button>
 
-    <button class="secret" onclick="changeVisibility(this)">Mostrar</button>
-
-    <script src="script.js">
-    </script>
-
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
