@@ -5,15 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Change BG Color with JS</title>
         <link rel="stylesheet" href="style.css" />
+
+        <style>
+            [until-load],
+            [ocultar]:not([ocultar='false']) {
+                display: none;
+            }
+        </style>
     </head>
 
     <body style="color: black">
-        <h1>Change BG color</h1>
-        <button onclick="setBgColor('red')">Red</button>
-        <button onclick="setBgColor('blue')">Blue</button>
-        <button onclick="setBgColor('green')">Green</button>
-        <button onclick="setBgColor('yellow')">Yellow</button>
-        <button onclick="setBgColor('')">Reset</button>
+        <h1 until-load>Change BG color</h1>
+        <h1 until-load ocultar="true">To Hide</h1>
+        <h1 until-load ocultar>To Hide</h1>
+        <h1 until-load ocultar="false">To Show</h1>
+
+        <div>
+            <button data-tipo-de-acao="altera cor de FUNDO body" data-acao-em="click" data-nova-cor="red">
+                BG Red
+            </button>
+            <button data-tipo-de-acao="altera cor de FUNDO body" data-acao-em="click" data-nova-cor="blue">
+                BG Blue
+            </button>
+            <button data-tipo-de-acao="altera cor de FUNDO body" data-acao-em="click" data-nova-cor="green">
+                BG Green
+            </button>
+            <button data-tipo-de-acao="altera cor de FUNDO body" data-acao-em="click" data-nova-cor="yellow">
+                BG Yellow
+            </button>
+            <button data-tipo-de-acao="altera cor de FUNDO body" data-acao-em="click" data-nova-cor="">BG Reset</button>
+        </div>
+
+        <br />
+
+        <div>
+            <button data-tipo-de-acao="altera cor do TEXTO do body" data-acao-em="click" data-nova-cor="red">
+                TEXT Red
+            </button>
+            <button data-tipo-de-acao="altera cor do TEXTO do body" data-acao-em="click" data-nova-cor="blue">
+                TEXT Blue
+            </button>
+            <button data-tipo-de-acao="altera cor do TEXTO do body" data-acao-em="click" data-nova-cor="green">
+                TEXT Green
+            </button>
+            <button data-tipo-de-acao="altera cor do TEXTO do body" data-acao-em="click" data-nova-cor="yellow">
+                TEXT Yellow
+            </button>
+            <button data-tipo-de-acao="altera cor do TEXTO do body" data-acao-em="click" data-nova-cor="">
+                TEXT Reset
+            </button>
+        </div>
 
         <p class="not-visible">The first paragraph is NOT visible.</p>
 
